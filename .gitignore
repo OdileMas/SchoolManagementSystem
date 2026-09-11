@@ -1,0 +1,14 @@
+@"
+# Python
+__pycache__/
+*.pyc
+
+# Django migrations (kept local only — each dev runs makemigrations themselves)
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Environment & database
+venv/
+.env
+db.sqlite3
+"@ | Out-File -FilePath .gitignore -Encoding utf8
