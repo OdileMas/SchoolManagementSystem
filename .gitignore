@@ -1,12 +1,25 @@
 # Python
 __pycache__/
 *.pyc
+*.pyo
 
 # Django migrations (kept local only — each dev runs makemigrations themselves)
-*/migrations/*.py
-!*/migrations/__init__.py
+**/migrations/*.py
+**/migrations/*.pyc
+!**/migrations/__init__.py
 
 # Environment & database
 venv/
+env/
 .env
 db.sqlite3
+*.sqlite3
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+
+# Static/media (optional, if you're not committing these)
+staticfiles/
+media/

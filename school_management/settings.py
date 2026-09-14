@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'exams'
     
 ]
+AUTH_USER_MODEL = "accounts.User"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
